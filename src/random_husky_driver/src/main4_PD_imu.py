@@ -30,7 +30,7 @@ class imu_sensor(object,cargs):
     def controller(yaw): #PD controller for clifford
 	    global yaw_des
 	    Kp = 70
-	    Kd = 7
+	    Kd = 7.5
 	    yaw_des = self.yaw_val[1]
 	    yaw_err = yaw - yaw_des
 	    print "Yaw (heading) angle error(rad)= " + str(yaw_err)
